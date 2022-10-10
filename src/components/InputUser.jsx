@@ -2,6 +2,7 @@ import React from 'react'
 
 function InputUser({name, Change, value, placeholder, type, children}) {
   return (
+    // THIS IS INPUT COMPONENT THAT CAN CHANGE ITS TYPE AND APPEARANCE VERY FAST
     <div className={`${type==="text"||type==="email"?"w-full justify-center":"w-24 my-2 justify-between"} flex flex-row  items-center`}>
 
     <input className={`my-2 border-b-2 border-blue-200 m-1 text-center

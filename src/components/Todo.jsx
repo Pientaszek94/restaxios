@@ -32,11 +32,11 @@ useEffect(()=>{
 
   return (
     <div style={style} onClick={Clicked} className=' 
-    flex flex-col justify-center items-center h-60'>
+    centered h-60'>
 
       {console.log("deadline: ", deadDays)}
 
-      <div className='flex flex-col justify-center items-center p-8 shadow-md w-3/4 h-fit'>
+      <div className='centered p-8 shadow-md w-3/4 h-fit'>
 
         <h1 className={`text-center  ${todo.status==="pending"?"bg-blue-400":"line-through bg-red-400"} text-white font-semibold px-4 p-2 text-sm md:text-base`}>Task #{todo.id}<br/>{todo.title}</h1>
 

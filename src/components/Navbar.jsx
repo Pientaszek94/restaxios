@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 function Navbar() {
     const subsites=["users", "posts", "todos"]
   return (
+    // NAVBAR
     <div className='w-full shadow-md h-20 
         flex flex-row justify-between items-center'>
             <Link to="/">
@@ -22,6 +23,7 @@ function Navbar() {
                     
                         return (
                             <Link to={`/${sub}`} key={index}>
+                                {/* AUTO CAPITAL LETTERS  */}
                                 <h3 className='mx-2'>{sub.charAt(0).toUpperCase()+sub.slice(1)}</h3>
                             </Link>
                         )

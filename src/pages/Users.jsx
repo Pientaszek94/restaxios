@@ -91,10 +91,10 @@ return (
                 {/* BUTTON TO SHOW INFO */}
 
                 <div className='w-full h-8 absolute bottom-0 
-                  flex flex-col justify-center items-center translate-y-1/2'>
+                  centered translate-y-1/2'>
 
                       <div  className={`cursor-pointer w-8 h-8 ${currentId===user.id?`bg-red-300 hover:bg-red-400`
-                      :`bg-yellow-200 hover:bg-yellow-400`}  duration-500 rounded-full flex flex-col justify-center items-center`}>
+                      :`bg-yellow-200 hover:bg-yellow-400`}  duration-500 rounded-full centered`}>
                              {
                               currentId!==user.id?(<div className="arrow-down" onClick={Clicked}></div>)
                               :(<div onClick={CancelView} className="arrow-up"></div>)

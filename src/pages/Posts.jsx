@@ -13,11 +13,6 @@ function Posts() {
 
   useEffect(()=>{
     dispatch(getPosts(page))
-    if(posts.length!==0){
-      // if(page===1){
-      //   setNewPostId((Math.max(...posts.data.map(post=> post.id)))+1)
-      // }
-    }
   },[page])
 
 

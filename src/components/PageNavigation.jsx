@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 
 function PageNavigation({page, pages, setPage}) {
 
@@ -19,7 +19,7 @@ const SelectPage=(e)=>{
   
 
   // IF TYPED PAGE IS TOO BIG
-  // IT is TRIGERRED WHEN TYPING NEW NUMBER OR CHANGING PAGES WITH ARROWS 
+  // IT is TRIGGERED WHEN TYPING NEW NUMBER OR CHANGING PAGES WITH ARROWS 
   useEffect(()=>{
     if(page>pages){
       setPage(pages)
@@ -65,7 +65,7 @@ const SelectPage=(e)=>{
                 / {pages}
                 </span>
                 <div className={` arrow-right ${page<pages?"border-black":null}`} onClick={NextPage}></div>
-         </div>
+    </div>
   )
 }
 

@@ -33,11 +33,11 @@ function PostForm({newPostId}) {
     },[postInfo.title])
     
     return (   
-        <div className='w-10/12 h-62 flex flex-col justify-center items-center'>
+        <div className='w-10/12 h-62 centered'>
         {newPostId?console.log("POST PISZE: ", postInfo):null}
-        <form className='shadow-lg w-5/6 flex flex-col justify-center items-center' onSubmit={Submit}>
+        <form className='shadow-lg w-5/6 centered' onSubmit={Submit}>
 
-        <div className='flex flex-col justify-center items-center'>
+        <div className='centered'>
 
             <h1 className='text-center font-semibold'>Author</h1>
 
@@ -45,7 +45,7 @@ function PostForm({newPostId}) {
             value={postInfo.user_id} 
             placeholder="Your User Id" type="text"/>
 
-            <Link to="/users" className='w-full flex flex-col justify-center items-center'>
+            <Link to="/users" className='w-full centered'>
                 <h2 className='text-xs hover:underline w-5/6 text-center'>
                     forgot your User Id or maybe you are new here? Click here to create or your profile</h2>
             </Link>

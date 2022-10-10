@@ -65,11 +65,11 @@ function Post({post}) {
                       comments.length>0?<div className='w-5/6 h-fit flex flex-col justify-start items-center'>{comments.map((comm)=>(
                           
                           <div key={comm.id} className='grid grid-cols-8 gap-2 w-full my-2 shadow-md p-2'>
-                              <div className='col-span-2 flex flex-col justify-center items-center'>
+                              <div className='col-span-2 centered'>
                                   <img src={faker.image.cats(1234, 2345, true)} alt="folks" className='w-8 h-8 mx-2 rounded-lg'/>  
                                   <h1 className='italic text-gray-300 text-xs text-center'>{comm.name}</h1>
                               </div>
-                              <div className='col-span-6 flex flex-col justify-center items-center p-2 text-gray-400'>
+                              <div className='col-span-6 centered p-2 text-gray-400'>
                                 {comm.body}
                               </div>
                                                         

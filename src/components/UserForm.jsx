@@ -39,8 +39,10 @@ const handleChange=(e)=>{
 
 
         <h1 className='text-center font-semibold text-3xl'>Create new User</h1>
-        <h2 className='text-center animate-ping text-xs'>Do NOT use your true Id</h2>
+        <h2 className='text-center text-xs'>Do NOT use your true Id</h2>
+        
         {/* HERE YOU CAN WRITE ABOUT NEW USER AND EVERY INFO WILL BE STASHED IN STATE userData THANKS TO SIMPLE FUNCTION handleChange() */}
+        
         <form method="post" onSubmit={Submit} className="h-full w-full flex flex-col justify-start items-center">
         
         {/* THESE ARE INPUT COMPONENTS TO SHORTEN CODE LENGTH AND SPEED CODING UP */}

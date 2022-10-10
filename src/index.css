@@ -27,3 +27,7 @@ select{
 .option{
     @apply hover:bg-blue-500 cursor-pointer
 }
+
+.centered{
+    @apply flex flex-col justify-center items-center
+}

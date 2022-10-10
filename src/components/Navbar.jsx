@@ -7,7 +7,7 @@ function Navbar() {
     // NAVBAR
     <div className='w-full shadow-md h-20 
         flex flex-row justify-between items-center'>
-            <Link to="/">
+            <Link to="/restaxios">
                 <div className='m-6 relative'>
                     <div className='absolute w-8 h-8 bg-yellow-200'></div>
                     <div className='absolute bottom-2 right-2 w-4 h-4 bg-blue-200'></div>

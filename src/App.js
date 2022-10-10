@@ -7,7 +7,7 @@ function App() {
       <Router>
         <Navbar/>
         <Routes>
-          <Route path="/" exact element={<Home/>}/>
+          <Route path="/restaxios" exact element={<Home/>}/>
           <Route path="/users" element={<Users/>}/>
           <Route path="/posts" element={<Posts/>}/>
           <Route path="/todos" element={<Todos/>}/>
